@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<meta name="viewport" content="initial-scale=1.0">
-<meta charset="utf-8">
+<html>
   <head>
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="../contact/contact.css">
-      <link rel="stylesheet" href="../standard.css">
-
     <title>Riverfront Hearing</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="../standard.css">
   </head>
   <body>
     <!-- NavBar -->
@@ -20,7 +31,7 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="../home/home.html">Home</a></li>
-            <li><a href="../locations/locations.html">Locations</a></li>
+            <li><a href="../contact/contact.html">Locations | Contact</a></li>
             <li><a href="../services/services.html">Services</a></li>
             <li><a href="../products/products.html">Products</a></li>
             <li><a href="../about-us/about-us.html">About Us</a></li>
@@ -39,96 +50,18 @@
       </ul>
     <!-- End Side Nav -->
 
-    <!-- Main Content  -->
-    <!-- <div class="wrapper">
-      <div class="container">
-        <div class="row content card-panel z-depth-4">
+    <div id="map"></div>
 
-          <div class="row">
-            <form class="col s6 push-s6">
-              <div class="row">
-
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix" type="text" class="validate">
-                  <label for="icon_prefix">Full Name</label>
-                </div>
-                </div>
-
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">phone</i>
-                  <input id="icon_telephone" type="tel" class="validate">
-                  <label for="icon_telephone">Telephone</label>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">email</i>
-                  <input id="icon_email" type="email" class="validate">
-                  <label for="icon_email">Email</label>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                  <label for="icon_prefix2">Message</label>
-                </div>
-              </div>
-
-            <div class="row move-right">
-              <div class="input-field col s12">
-                <select>
-                  <option value="" disabled selected>Choose your location</option>
-                  <option value="1">Flint</option>
-                  <option value="2">Saginaw</option>
-                  <option value="3">Not Sure</option>
-                </select>
-                <label>Preferred Office Location</label>
-              </div>
-            </div>
-
-            <div class="row">
-              <button class="btn waves-effect waves-light green" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-
-            </form>
-          </div> -->
-
-<!-- Map -->
-
-  <div class="map" id="map"></div>
-
-
-<!-- End Map  -->
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- End Main Content -->
-
-
-    <!-- Footer -->
-    <footer class="page-footer blue-grey darken-1">
-        <div class="footer-copyright">
-          <div class="container">
-          © 2018 Copyright Riverfront Hearing
-          <a class="grey-text text-lighten-4 right " href="https://www.facebook.com/riverfronthearing/">Follow Us on Facebook!</a>
-          </div>
-        </div>
-      </footer>
-    <!-- End Footer -->
-
-    <script type="text/javascript" src="../standard.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.4632713, lng: -83.97961959999998},
+          zoom: 18
+        });
+      }
+      
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkc8T1c76OtQ3jL8k28rmwfF4NAtgHu2A&callback=initMap"
     async defer></script>
   </body>
