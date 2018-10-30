@@ -1,0 +1,27 @@
+body{
+  /* background: url("../images/ian-keefe-354195-unsplash.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  background-color: white;
+  color: black;
+}
+
+.content{
+  background: white;
+  margin-top: 1%;
+  padding: 1%;
+  /* box-shadow: 5px 10px #000000; */
+}
+
+
+.hearing-aid-image{
+  height: 75%;
+  width: 75%;
+  margin-top: 6%;
+}
+
+.call-to-action{
+  text-align: center;
+}

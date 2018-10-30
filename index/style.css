@@ -1,0 +1,51 @@
+html {
+  background: url("../images/justin-mcafee-656012-unsplash.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.hero-card{
+  grid-column: 2 / 3;
+  text-align: center;
+  color: #ffffff;
+  font-family:'Merriweather', serif;
+  font-weight: bolder;
+}
+
+.hero{
+  grid-row: 1 / 2;
+  margin: auto;
+  text-align: center;
+  margin-top: 7%;
+  /* border: solid;
+  border-width: medium; */
+}
+
+.tag{
+  grid-row: 2 / 3;
+  margin: auto;
+  margin-top: 18%;
+}
+
+.learn-more{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin: auto;
+  margin-top: 28%;
+}
+
+h1{
+  font-size: 72px;
+}
+
+h3{
+  font-size: 28px;
+}
