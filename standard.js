@@ -9,22 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.FormSelect.init(elems);
 
 //Submit Button Action
-
-  let field = document.querySelector(".form-set-field")
   let submit = document.querySelector("#submit-button")
 
-  submit.addEventListener("click", function(event){
-    alert("Thank you for you inquiry, we'll reach out soon!")
-  }) // Submit Button End
+  submit.addEventListener("click", function(){
+    alert("Thank you for your inquiry! We will reach out soon.")
+  }) // End Submit Button Action
 
-//Favorite Button - Local Storage
 
-  let favorite = document.querySelector(".product-wrapper")
-  let aidName = document.querySelector(".card-title")
 
-  favorite.addEventListener("click", function(){
-    localStorage.setItem("favorite", aidName.innerText)
-  }) // Fav Button End
 
 
 
