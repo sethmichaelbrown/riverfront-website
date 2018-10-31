@@ -41,3 +41,11 @@ p, li{
 .hide-on-med-and-down{
   margin-right: 2%
 }
+
+.social-footer{
+  float: right;
+}
+
+.logo{
+  height: 15px;
+}
