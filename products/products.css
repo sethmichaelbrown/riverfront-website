@@ -1,3 +1,7 @@
 p{
   font-size: 12px;
 }
+
+.activator{
+  max-height: 260px;
+}
