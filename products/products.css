@@ -5,3 +5,27 @@ p{
 .activator{
   max-height: 260px;
 }
+
+.product-cards, .activator{
+  display: flex;
+}
+
+.vendor-logo{
+  height: 75%;
+  width: 75%;
+  max-height: 200px;
+  min-height: 195px;
+}
+
+li > p {
+  font-size: 14px;
+  margin-right: 1%;
+}
+
+.secondary-content{
+  color: #fb8c00;
+}
+
+.vendor-launch{
+  margin-left: 1%;
+}

@@ -1,45 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Riverfront Hearing</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="../standard.css">
-  </head>
-  <body>
+
+<head>
+  <title>Riverfront Hearing</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="../standard.css">
+</head>
+
+<body>
 
 <!-- NavBar -->
-      <nav>
-        <div class="nav-wrapper blue-grey darken-1 orange-text">
-          <a href="../home/home.html" class="brand-logo"><img src="../images/riverfront.png" class="riverfront-nav-logo" alt="logo"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="../home/home.html">Home</a></li>
-            <li><a href="../contact/contact.html">Locations | Contact</a></li>
-            <li><a href="../products/products.html">Products</a></li>
-            <li><a href="../about-us/about-us.html">About Us</a></li>
-          </ul>
-        </div>
-      </nav>
-<!-- End NavBar -->
+    <nav>
+      <div class="nav-wrapper blue-grey darken-1 orange-text">
 
-<!-- Side Nav -->
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="../home/home.html">Home</a></li>
-        <li><a href="../contact/contact.html">Locations</a></li>
-        <li><a href="../services/services.html">Services</a></li>
-        <li><a href="../products/products.html">Products</a></li>
-        <li><a href="../about/about-us.html">About Us</a></li>
-      </ul>
-<!-- End Side Nav -->
+        <a href="../home/home.html" class="brand-logo hide-on-small-only">
+          <img src="../images/riverfront.png" class="riverfront-nav-logo" alt="logo">
+        </a>
 
-<div class="product-wrapper">
-  <div class="container">
-    <div class="row content card-panel z-depth-4 product-cards">
+        <a href="../home/home.html" class="brand-logo hide-on-med-and-up show-on-small">
+          <img src="../images/riverfront.png" class="brand-logo-mobile" alt="logo">
+        </a>
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="../home/home.html">Home</a></li>
+          <li><a href="../contact/contact.html">Locations | Contact</a></li>
+          <li><a href="../products/products.html">Products</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home/home.html">Home</a></li>
+      <li><a href="../contact/contact.html">Locations | Contact</a></li>
+      <li><a href="../products/products.html">Products</a></li>
+    </ul>
+
+  <!-- Vendors -->
+  <div class="row container vendors">
+    <div class="col s12">
+      <h2>Our Vendors</h2>
+    </div>
+  </div>
+
+  <div class="vendor-wrapper">
+    <div class="container">
+      <div class="row content card-panel z-depth-4 vendor-cards">
+
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <img src="../images/vendors/oticon.png" alt="oticon" class="circle">
+            <span class="title">Oticon</span>
+              <p>Rediscover the sounds of your life with Oticon hearing aids
+              </p>
+            <a href="https://www.oticon.com/" class="secondary-content"><i class="vendor-launch material-icons medium">add_circle</i></a>
+          </li>
+
+          <li class="collection-item avatar">
+            <img src="../images/vendors/Phonak.png" alt="Phonak" class="circle">
+            <span class="title">Phonak</span>
+              <p>Whatever your degree of hearing loss, Phonak hearing aids fit seamlessly into your life
+              </p>
+            <a href="https://www.phonak.com/us/en.html" class="secondary-content"><i class="vendor-launch material-icons medium">add_circle</i></a>
+          </li>
+
+          <li class="collection-item avatar">
+            <img src="../images/vendors/Siemens.png" alt="Siemens" class="circle">
+            <span class="title">Siemens</span>
+              <p>Offering hearing aids & accessories to help those that suffer from hearing loss.
+              </p>
+            <a href="https://usa.bestsoundtechnology.com/" class="secondary-content"><i class="vendor-launch material-icons medium">add_circle</i></a>
+          </li>
+
+          <li class="collection-item avatar">
+            <img src="../images/vendors/starkey.jpg" alt="starkey" class="circle">
+            <span class="title">Starkey</span>
+              <p>Hearing aids optimized for smartphones, including AI enabled options
+              </p>
+            <a href="https://www.starkey.com/" class="secondary-content"><i class="vendor-launch material-icons medium">add_circle</i></a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Products -->
+  <div class="row container">
+    <div class="col s12">
+      <h2>New Product Arrivals</h2>
+    </div>
+  </div>
+
+  <div class="product-wrapper">
+    <div class="container">
+      <div class="row content card-panel z-depth-4 product-cards">
+
 
         <div class="card col s4 hoverable">
           <div class="card-image waves-effect waves-block waves-light">
@@ -69,7 +134,7 @@
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Livio™ AI<i class="material-icons right">close</i></span>
             <p>
-                Livio™ AI is the world’s first hearing aid to provide both superior sound quality and the ability to track body and brain health. Featuring integrated sensors and artificial intelligence, Livio AI redefines what a hearing aid can do.
+              Livio™ AI is the world’s first hearing aid to provide both superior sound quality and the ability to track body and brain health. Featuring integrated sensors and artificial intelligence, Livio AI redefines what a hearing aid can do.
             </p>
             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="favoriteButton material-icons">favorite</i></a>
           </div>
@@ -86,39 +151,39 @@
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Halo IQ<i class="material-icons right">close</i></span>
             <p>
-                Starkey’s smartphone compatible hearing aids, have advanced noise reduction technology and precise directional microphones to help make speech sound more natural and easier to hear in today’s complex listening environments.
+              Starkey’s smartphone compatible hearing aids, have advanced noise reduction technology and precise directional microphones to help make speech sound more natural and easier to hear in today’s complex listening environments.
             </p>
             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="favoriteButton material-icons">favorite</i></a>
           </div>
         </div>
 
+      </div>
     </div>
   </div>
-</div>
+
 
   <!-- Footer -->
-    <footer class="page-footer blue-grey darken-1">
-        <div class="footer-copyright">
-          <div class="container">
-          © 2018 Copyright Riverfront Hearing
-          <a class="grey-text text-lighten-4 social-footer" href="https://www.facebook.com/riverfronthearing/">
-            <img src="../images/flogo-HexRBG-Wht-100.png" class="facebook-logo logo" alt="facebook-logo">
-            Follow on Facebook
-          </a>
-          <br>
-          <a class="grey-text text-lighten-4 social-footer" href="https://www.linkedin.com/company/riverfront-hearing-inc/?originalSubdomain=sg">
-            <img src="../images/In-White-94px-TM.png" class="linkedin-logo logo" alt="linkedin-logo">
-            Connect on LinkedIn
-          </a>
-          </div>
-        </div>
-      </footer>
-    <!-- End Footer -->
+  <footer class="page-footer blue-grey darken-1">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Riverfront Hearing
+        <a class="grey-text text-lighten-4 social-footer" href="https://www.facebook.com/riverfronthearing/">
+          <img src="../images/flogo-HexRBG-Wht-100.png" class="facebook-logo logo" alt="facebook-logo">
+          Follow on Facebook
+        </a>
+        <br>
+        <a class="grey-text text-lighten-4 social-footer" href="https://www.linkedin.com/company/riverfront-hearing-inc/?originalSubdomain=sg">
+          <img src="../images/In-White-94px-TM.png" class="linkedin-logo logo" alt="linkedin-logo">
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="products.js">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="products.js"></script>
+  <script type="text/javascript" src="standard.js"></script>
 
-    </script>
-  </body>
 </html>

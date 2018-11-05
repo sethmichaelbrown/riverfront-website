@@ -13,10 +13,10 @@ body{
  max-height: 50px;
 }
 
-.hearing-aid-image{
+.main-image{
   height: 75%;
   width: 75%;
-  margin-top: 6%;
+  margin-top: 10%;
 }
 
 .call-to-action{
