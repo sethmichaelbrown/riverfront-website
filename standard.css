@@ -29,15 +29,16 @@ p, li{
 }
 
 .riverfront-nav-logo{
-  height: 65px;
+  max-height: 65px;
 }
 
+}
 .brand-logo{
   margin-left: 4%;
 }
 
 .brand-logo-mobile{
- max-height: 50px;
+ max-height: 45px;
 }
 
 .social-footer{

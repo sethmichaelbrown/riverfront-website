@@ -27,9 +27,6 @@ body{
   color: white;
 }
 
-@media only screen and (min-width: 400px) {
-  .show-on-small-only{
-    display: none;
-  }
-
+.center-text{
+  text-align: center;
 }
